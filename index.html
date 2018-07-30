@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Invie | Conviertete en una estrella de rock</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/invie.css"/>
+  </head>
+  <body>
+    <section class="banner background">
+      <header class="header container">
+        <figure class="logo">
+          <img src="./images/invie2x.png" width="186" height="80" alt="invie"/>
+        </figure>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="index.html#guitar">Guitarras</a>
+            </li>
+            <li>
+              <a href="price.html">Precios</a>
+            </li>
+          </ul>      
+        </nav>
+      </header>
+      <div class="container">
+        <h1 class="title">Gritarras <span>invie</span>sibles</h1>
+        <h3 class="decription">Se la estrella de rock que siempre quisiste ser</h3>
+        <a class="button" href="#guitar">Conoce mas</a>
+      </div>
+    </section>
+    <section id="guitar" class="guitar container">
+      <h2 class="guitar-title">Nuestras Guitarras</h2>
+      <article class="guitar-content">
+        <img class="right acustica" src="./images/invie-acustica.png" alt="invie Acustica" width="350"/>
+        <div class="guitar-container-a">
+          <h3 class="guitar-type-title">Invie Acustica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+      </article>
+      <article class="guitar-content" style="height: 200px;">
+        <img  class="left classic" src="./images/invie-classic.png" alt="invie classic" width="350"/>
+        <div class="guitar-container-b">
+          <h3 class="guitar-type-title">Invie Classic</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como rockstar</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="contact">
+          <img src="./images/invie-white.png" alt="invie" />
+          <a href="tel:+18092440851"><strong>Telefono</strong> <span>809-244-0851</span></a>
+          <a href="mailto:info@invie.com"><strong>Email</strong><span>info@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="name">Nombre</label>
+            <input type="text" required id="name" name="name"/>
+            <label for="email">Email</label>
+            <input type="email" required id="email" name="email"/>
+            <div class="sexo">
+              <label for="woman">
+                <input type="radio" checked id="woman" name="sexo" value="mujer"/> Mujer
+              </label>
+              <label for="man">
+                <input type="radio" id="man" name="sexo" value="hombre"/> Hombre
+              </label>
+            </div>
+            <div class="interreses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="interreses" value="cotizacion"/> Cotizacion
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="interreses" value="reclamos"/> Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="interreses" value="comentarios"/> Comentarios
+              </label>
+              <label for="Otros">
+                <input type="checkbox" id="Otros" name="interreses" value="Otros"/> Otros
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="comment">Comentario</label>
+            <textarea name="comment" id="comment" cols="30" rows="7"></textarea>
+            <input class="button" style="margin-top: 10px;" type="submit" value="Enviar"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
